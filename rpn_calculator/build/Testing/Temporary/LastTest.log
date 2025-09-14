@@ -1,0 +1,22 @@
+Start testing: Sep 13 17:12 MSK
+----------------------------------------------------------
+1/1 Testing: rpn_tests
+1/1 Test: rpn_tests
+Command: "/home/primarch21/Calculator/rpn_calculator/build/tests/rpn_tests"
+Directory: /home/primarch21/Calculator/rpn_calculator/build/tests
+"rpn_tests" start time: Sep 13 17:12 MSK
+Output:
+----------------------------------------------------------
+Running main() from /home/primarch21/Calculator/rpn_calculator/build/_deps/googletest-src/googletest/src/gtest_main.cc
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"rpn_tests" end time: Sep 13 17:12 MSK
+"rpn_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 13 17:12 MSK
