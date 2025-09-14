@@ -1,22 +1,51 @@
-Start testing: Sep 13 17:12 MSK
+Start testing: Sep 14 15:41 MSK
 ----------------------------------------------------------
 1/1 Testing: rpn_tests
 1/1 Test: rpn_tests
-Command: "/home/primarch21/Calculator/rpn_calculator/build/tests/rpn_tests"
-Directory: /home/primarch21/Calculator/rpn_calculator/build/tests
-"rpn_tests" start time: Sep 13 17:12 MSK
+Command: "/home/primarch21/Calculator/rpn_calculator/build/rpn_tests"
+Directory: /home/primarch21/Calculator/rpn_calculator/build
+"rpn_tests" start time: Sep 14 15:41 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /home/primarch21/Calculator/rpn_calculator/build/_deps/googletest-src/googletest/src/gtest_main.cc
-[==========] Running 0 tests from 0 test suites.
-[==========] 0 tests from 0 test suites ran. (0 ms total)
-[  PASSED  ] 0 tests.
+[==========] Running 12 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 12 tests from RPNTest
+[ RUN      ] RPNTest.BasicAddition
+[       OK ] RPNTest.BasicAddition (0 ms)
+[ RUN      ] RPNTest.ComplexExpression
+[       OK ] RPNTest.ComplexExpression (0 ms)
+[ RUN      ] RPNTest.DivisionByZero
+[       OK ] RPNTest.DivisionByZero (0 ms)
+[ RUN      ] RPNTest.InvalidExpression
+[       OK ] RPNTest.InvalidExpression (0 ms)
+[ RUN      ] RPNTest.PowerOperation
+[       OK ] RPNTest.PowerOperation (0 ms)
+[ RUN      ] RPNTest.ModuloOperation
+[       OK ] RPNTest.ModuloOperation (0 ms)
+[ RUN      ] RPNTest.NegateOperation
+[       OK ] RPNTest.NegateOperation (0 ms)
+[ RUN      ] RPNTest.IncrementDecrement
+[       OK ] RPNTest.IncrementDecrement (0 ms)
+[ RUN      ] RPNTest.FactorialOperation
+[       OK ] RPNTest.FactorialOperation (0 ms)
+[ RUN      ] RPNTest.ModuloRequiresIntegers
+[       OK ] RPNTest.ModuloRequiresIntegers (0 ms)
+[ RUN      ] RPNTest.FactorialRequiresNonNegativeInteger
+[       OK ] RPNTest.FactorialRequiresNonNegativeInteger (0 ms)
+[ RUN      ] RPNTest.ComplexExpressionsWithNewOperators
+[       OK ] RPNTest.ComplexExpressionsWithNewOperators (0 ms)
+[----------] 12 tests from RPNTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 12 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 12 tests.
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"rpn_tests" end time: Sep 13 17:12 MSK
+"rpn_tests" end time: Sep 14 15:41 MSK
 "rpn_tests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Sep 13 17:12 MSK
+End testing: Sep 14 15:41 MSK

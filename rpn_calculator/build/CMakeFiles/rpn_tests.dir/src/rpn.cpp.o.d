@@ -1,4 +1,4 @@
-CMakeFiles/rpn_calculator.dir/src/rpn.cpp.o: \
+CMakeFiles/rpn_tests.dir/src/rpn.cpp.o: \
  /home/primarch21/Calculator/rpn_calculator/src/rpn.cpp \
  /usr/include/stdc-predef.h \
  /home/primarch21/Calculator/rpn_calculator/include/rpn.h \

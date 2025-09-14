@@ -1,4 +1,5 @@
 /home/primarch21/Calculator/rpn_calculator/build/CMakeFiles/rpn_calculator.dir
+/home/primarch21/Calculator/rpn_calculator/build/CMakeFiles/rpn_tests.dir
 /home/primarch21/Calculator/rpn_calculator/build/CMakeFiles/test.dir
 /home/primarch21/Calculator/rpn_calculator/build/CMakeFiles/edit_cache.dir
 /home/primarch21/Calculator/rpn_calculator/build/CMakeFiles/rebuild_cache.dir
@@ -6,14 +7,6 @@
 /home/primarch21/Calculator/rpn_calculator/build/CMakeFiles/install.dir
 /home/primarch21/Calculator/rpn_calculator/build/CMakeFiles/install/local.dir
 /home/primarch21/Calculator/rpn_calculator/build/CMakeFiles/install/strip.dir
-/home/primarch21/Calculator/rpn_calculator/build/tests/CMakeFiles/rpn_tests.dir
-/home/primarch21/Calculator/rpn_calculator/build/tests/CMakeFiles/test.dir
-/home/primarch21/Calculator/rpn_calculator/build/tests/CMakeFiles/edit_cache.dir
-/home/primarch21/Calculator/rpn_calculator/build/tests/CMakeFiles/rebuild_cache.dir
-/home/primarch21/Calculator/rpn_calculator/build/tests/CMakeFiles/list_install_components.dir
-/home/primarch21/Calculator/rpn_calculator/build/tests/CMakeFiles/install.dir
-/home/primarch21/Calculator/rpn_calculator/build/tests/CMakeFiles/install/local.dir
-/home/primarch21/Calculator/rpn_calculator/build/tests/CMakeFiles/install/strip.dir
 /home/primarch21/Calculator/rpn_calculator/build/_deps/googletest-build/CMakeFiles/test.dir
 /home/primarch21/Calculator/rpn_calculator/build/_deps/googletest-build/CMakeFiles/edit_cache.dir
 /home/primarch21/Calculator/rpn_calculator/build/_deps/googletest-build/CMakeFiles/rebuild_cache.dir

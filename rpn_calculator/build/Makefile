@@ -194,7 +194,7 @@ rpn_tests: cmake_check_build_system
 
 # fast build rule for target.
 rpn_tests/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/rpn_tests.dir/build.make tests/CMakeFiles/rpn_tests.dir/build
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn_tests.dir/build.make CMakeFiles/rpn_tests.dir/build
 .PHONY : rpn_tests/fast
 
 #=============================================================================
@@ -279,6 +279,7 @@ src/rpn.o: src/rpn.cpp.o
 # target to build an object file
 src/rpn.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn_calculator.dir/build.make CMakeFiles/rpn_calculator.dir/src/rpn.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn_tests.dir/build.make CMakeFiles/rpn_tests.dir/src/rpn.cpp.o
 .PHONY : src/rpn.cpp.o
 
 src/rpn.i: src/rpn.cpp.i
@@ -287,6 +288,7 @@ src/rpn.i: src/rpn.cpp.i
 # target to preprocess a source file
 src/rpn.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn_calculator.dir/build.make CMakeFiles/rpn_calculator.dir/src/rpn.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn_tests.dir/build.make CMakeFiles/rpn_tests.dir/src/rpn.cpp.i
 .PHONY : src/rpn.cpp.i
 
 src/rpn.s: src/rpn.cpp.s
@@ -295,7 +297,32 @@ src/rpn.s: src/rpn.cpp.s
 # target to generate assembly for a file
 src/rpn.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn_calculator.dir/build.make CMakeFiles/rpn_calculator.dir/src/rpn.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn_tests.dir/build.make CMakeFiles/rpn_tests.dir/src/rpn.cpp.s
 .PHONY : src/rpn.cpp.s
+
+tests/test_rpn.o: tests/test_rpn.cpp.o
+.PHONY : tests/test_rpn.o
+
+# target to build an object file
+tests/test_rpn.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn_tests.dir/build.make CMakeFiles/rpn_tests.dir/tests/test_rpn.cpp.o
+.PHONY : tests/test_rpn.cpp.o
+
+tests/test_rpn.i: tests/test_rpn.cpp.i
+.PHONY : tests/test_rpn.i
+
+# target to preprocess a source file
+tests/test_rpn.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn_tests.dir/build.make CMakeFiles/rpn_tests.dir/tests/test_rpn.cpp.i
+.PHONY : tests/test_rpn.cpp.i
+
+tests/test_rpn.s: tests/test_rpn.cpp.s
+.PHONY : tests/test_rpn.s
+
+# target to generate assembly for a file
+tests/test_rpn.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn_tests.dir/build.make CMakeFiles/rpn_tests.dir/tests/test_rpn.cpp.s
+.PHONY : tests/test_rpn.cpp.s
 
 # Help Target
 help:
@@ -322,6 +349,9 @@ help:
 	@echo "... src/rpn.o"
 	@echo "... src/rpn.i"
 	@echo "... src/rpn.s"
+	@echo "... tests/test_rpn.o"
+	@echo "... tests/test_rpn.i"
+	@echo "... tests/test_rpn.s"
 .PHONY : help
 
 

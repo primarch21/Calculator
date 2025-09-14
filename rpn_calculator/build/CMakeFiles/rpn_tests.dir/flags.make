@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/primarch21/Calculator/rpn_calculator/include -isystem /home/primarch21/Calculator/rpn_calculator/build/_deps/googletest-src/googletest/include -isystem /home/primarch21/Calculator/rpn_calculator/build/_deps/googletest-src/googletest
 
-CXX_FLAGS = 
+CXX_FLAGS = -std=gnu++20
 

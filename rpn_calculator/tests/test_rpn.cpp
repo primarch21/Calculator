@@ -53,6 +53,6 @@ TEST(RPNTest, FactorialRequiresNonNegativeInteger) {
 }
 
 TEST(RPNTest, ComplexExpressionsWithNewOperators) {
-    EXPECT_DOUBLE_EQ(evaluate_rpn("5 ~ 3 * 2 ^"), 36.0);
+    EXPECT_DOUBLE_EQ(evaluate_rpn("5 ~ 3 * 2 ^"), 225.0);
     EXPECT_DOUBLE_EQ(evaluate_rpn("10 3 % 2 +"), 3.0);
 }

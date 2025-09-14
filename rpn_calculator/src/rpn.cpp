@@ -43,6 +43,7 @@ double evaluate_rpn(const std::string& expression) {
         if (is_number(token)) {
             stack.push(std::stod(token));
         } else {
+            // Обрабатываем унарные операторы
             if (token == "~" || token == "++" || token == "--" || token == "!") {
                 if (stack.empty()) {
                     throw std::invalid_argument("Not enough operands for operator '" + token + "'");
@@ -52,13 +53,12 @@ double evaluate_rpn(const std::string& expression) {
                 double result;
 
                 if (token == "~") {
-                    result = -a;  // Унарный минус
+                    result = -a;
                 } else if (token == "++") {
-                    result = a + 1;  // Инкремент
+                    result = a + 1;
                 } else if (token == "--") {
-                    result = a - 1;  // Декремент
+                    result = a - 1;
                 } else if (token == "!") {
-                    // Факториал (только для целых неотрицательных чисел)
                     if (a < 0 || std::floor(a) != a) {
                         throw std::invalid_argument("Factorial requires non-negative integer");
                     }
@@ -68,40 +68,49 @@ double evaluate_rpn(const std::string& expression) {
                     }
                 }
                 stack.push(result);
-            }  else {
-                  if (stack.size() < 2) {
-                      throw std::invalid_argument("Not enough operands for operator '" + token + "'");
-                  }
+            }
+            // Обрабатываем бинарные операторы
+            else {
+                if (stack.size() < 2) {
+                    throw std::invalid_argument("Not enough operands for operator '" + token + "'");
+                }
 
-                  double b = stack.top(); stack.pop();
-                  double a = stack.top(); stack.pop();
-                  double result;
+                double b = stack.top(); stack.pop();
+                double a = stack.top(); stack.pop();
+                double result;
 
-                  if (token == "+") {
-                      result = a + b;
-                  } else if (token == "-") {
-                      result = a - b;
-                  } else if (token == "*") {
-                      result = a * b;
-                  } else if (token == "/") {
-                      if (b == 0.0) {
-                          throw std::invalid_argument("Division by zero");
-                      }
-                      result = a / b;
-                  } else if (token == "^") {
-                      result = std::pow(a, b);
-                  } else {
+                if (token == "+") {
+                    result = a + b;
+                } else if (token == "-") {
+                    result = a - b;
+                } else if (token == "*") {
+                    result = a * b;
+                } else if (token == "/") {
+                    if (b == 0.0) {
+                        throw std::invalid_argument("Division by zero");
+                    }
+                    result = a / b;
+                } else if (token == "^") {
+                    result = std::pow(a, b);
+                } else if (token == "%") {
+                    if (std::floor(a) != a || std::floor(b) != b) {
+                        throw std::invalid_argument("Modulo operation requires integers");
+                    }
+                    if (b == 0) {
+                        throw std::invalid_argument("Modulo by zero");
+                    }
+                    result = std::fmod(a, b);
+                } else {
                     throw std::invalid_argument("Invalid operator: '" + token + "'");
-                  }
-
-                  stack.push(result);
+                }
+                stack.push(result);
             }
         }
-
-        if (stack.size() != 1) {
-            throw std::invalid_argument("Invalid expression: too many operands");
-        }
-
-        return stack.top();
     }
+
+    if (stack.size() != 1) {
+        throw std::invalid_argument("Invalid expression: too many operands");
+    }
+
+    return stack.top();  // Убедитесь, что это последняя строка
 }
