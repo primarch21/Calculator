@@ -6,6 +6,10 @@
 /**
  * @brief Evaluates a mathematical expression in Reverse Polish Notation (RPN).
  *
+ * Supported operators:
+ * - Binary: +, -, *, /, ^ (power), % (modulo)
+ * - Unary: ~ (negate), ++ (increment), -- (decrement), ! (factorial)
+ *
  * @param expression A string containing the RPN expression (e.g., "2 3 +").
  *        Tokens must be separated by spaces.
  * @return double The result of the evaluated expression.
