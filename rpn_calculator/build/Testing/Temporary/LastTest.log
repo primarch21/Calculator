@@ -1,10 +1,10 @@
-Start testing: Sep 16 23:37 MSK
+Start testing: Sep 17 20:20 MSK
 ----------------------------------------------------------
 1/1 Testing: rpn_tests
 1/1 Test: rpn_tests
 Command: "/home/primarch21/Calculator/rpn_calculator/build/rpn_tests"
 Directory: /home/primarch21/Calculator/rpn_calculator/build
-"rpn_tests" start time: Sep 16 23:37 MSK
+"rpn_tests" start time: Sep 17 20:20 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /home/primarch21/Calculator/rpn_calculator/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -41,11 +41,11 @@ Running main() from /home/primarch21/Calculator/rpn_calculator/build/_deps/googl
 [==========] 12 tests from 1 test suite ran. (1 ms total)
 [  PASSED  ] 12 tests.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"rpn_tests" end time: Sep 16 23:37 MSK
+"rpn_tests" end time: Sep 17 20:20 MSK
 "rpn_tests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Sep 16 23:37 MSK
+End testing: Sep 17 20:20 MSK

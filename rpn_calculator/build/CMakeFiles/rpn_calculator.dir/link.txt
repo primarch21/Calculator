@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/rpn_calculator.dir/src/main.cpp.o CMakeFiles/rpn_calculator.dir/src/rpn.cpp.o -o rpn_calculator 
+/usr/bin/c++ CMakeFiles/rpn_calculator.dir/src/main.cpp.o -o rpn_calculator  librpn_lib.a 

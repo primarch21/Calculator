@@ -1,3 +1,4 @@
+/home/primarch21/Calculator/rpn_calculator/build/CMakeFiles/rpn_lib.dir
 /home/primarch21/Calculator/rpn_calculator/build/CMakeFiles/rpn_calculator.dir
 /home/primarch21/Calculator/rpn_calculator/build/CMakeFiles/rpn_tests.dir
 /home/primarch21/Calculator/rpn_calculator/build/CMakeFiles/test.dir
