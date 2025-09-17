@@ -1,0 +1,14 @@
+# Target labels
+ googletest-populate
+# Source files and their labels
+/home/primarch21/Calculator/rpn_calculator/_deps/googletest-subbuild/CMakeFiles/googletest-populate
+/home/primarch21/Calculator/rpn_calculator/_deps/googletest-subbuild/CMakeFiles/googletest-populate.rule
+/home/primarch21/Calculator/rpn_calculator/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete.rule
+/home/primarch21/Calculator/rpn_calculator/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build.rule
+/home/primarch21/Calculator/rpn_calculator/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure.rule
+/home/primarch21/Calculator/rpn_calculator/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download.rule
+/home/primarch21/Calculator/rpn_calculator/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install.rule
+/home/primarch21/Calculator/rpn_calculator/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir.rule
+/home/primarch21/Calculator/rpn_calculator/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch.rule
+/home/primarch21/Calculator/rpn_calculator/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test.rule
+/home/primarch21/Calculator/rpn_calculator/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update.rule
