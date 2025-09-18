@@ -1,0 +1,26 @@
+name: CI
+
+# СЕКЦИЯ 'on' ОБЯЗАТЕЛЬНА - здесь определяются триггеры
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up environment
+      run: |
+        echo "Setting up build environment"
+        # ваши команды настройки
+
+    - name: Build project
+      run: |
+        echo "Building project..."
+        # команды сборки
